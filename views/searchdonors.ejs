@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="search_donor.css">
+</head>
+<body>
+    <hr class="ontop">
+    <div class="nav">
+        <span class="logo">Blood </span><span>Donation</span>
+        <ul class="nav_bar">
+            <li><a id="123" href="">Home</a></li>
+            <li><a href="#one_row">Services</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">About US</a></li>
+        </ul>
+        <a class="login" href="login.html">login</a>
+    </div>
+    <hr class="onbottom">
+    <form action="/searchdonor" method="POST">
+    <div class="container">
+    
+    <div class="bg">
+        <label for="blood_group">Blood Group:</label><br>
+        <select name="bloodgroup" id="blood_group">
+            <option value="selct blood group">Select blood group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+        <br>
+    </div>
+
+        <div class="location">
+            <p>Location:</p>
+            <label for="">State</label>
+            <select  name="state" id="slct1" onchange="populate(this.id,'slct2')">
+                <option value="">--Select your State--</option>
+                <option value="Andhra Pradesh" name="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="arunachalpradesh">Arunachal Pradesh</option>
+                <option value="assam">Assam</option>
+                <option value="">Bihar</option>
+                <option value="">Chattisgarh</option>
+                <option value="">Goa</option>
+                <option value="">Gujarat</option>
+                <option value="">Haryana</option>
+                <option value="">Himachal Pradesh</option>
+                <option value="">Jammu and Kashmir</option>
+                <option value="">Jharkhand</option>
+                <option value="">Karnataka</option>
+                <option value="">Kerala</option>
+                <option value="">Madhya Pradesh</option>
+                <option value="">Maharashtra</option>
+                <option value="">Manipur</option>
+                <option value="">Meghalaya</option>
+                <option value="">Mizoram</option>
+                <option value="">Nagaland</option>
+                <option value="">Odisha</option>
+                <option value="">Punjab</option>
+                <option value="">Rajasthan</option>
+                <option value="">Sikkim</option>
+                <option value="">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="">Tripura</option>
+                <option value="">Uttar Pradesh</option>
+                <option value="">Uttarakhand</option>
+                <option value="">West Bengal</option>
+    
+            </select>
+            <label for="">City</label>
+            <select  id="slct2" name="city">Select city</select>
+        </div>
+        <script>
+            function populate(s1, s2) {
+                var s1 = document.getElementById(s1);
+                var s2 = document.getElementById(s2);
+
+                s2.innerHTML = "";
+                if (s1.value === "Andhra Pradesh") {
+
+                    var optionArray = ['anathapur|Anathapur', 'chittor|Chittor', 'eastgodavari|East Godavari',
+                        'guntur|Guntur', 'kadapa|Kadapa', 'krishna|Krishna', 'kurnool|Kurnool', 'nellore|Nellore',
+                        'prakasam|Prakasam', 'srikakulam|Srikakulam', 'Visakhapatnam|Visakhapatnam',
+                        'vizianagaram|Vizianagaram', 'westgodavari|West Godavari'
+                    ];
+                }
+                else if (s1.value == "telangana") {
+                    var optionArray = ['adilabad|Adilabad', 'hyderabad|Hyderabad', 'karimnagar|Karimnagar',
+                        'khammam|Khammam', 'mahaboobnagar|Mahaboobnagar', 'medak|Medak',
+                        'nalgonda|Nalgonda', 'nizamabad|Nizamabad', 'rangareddy|Rangareddy',
+                        'warangal|warangal'
+                    ];
+                }
+                else if (s1.value == "arunachalpradesh") {
+                    var optionArray = ['anjaw|Anjaw', 'changlang|Changlang', 'dibangvalley|Dibang Valley',
+                        'eastsiang|East Siang', 'eastkameng|East Kameng', 'kiapi|Kiapi',
+                        'kurungkumey|Kurung Kumey', 'kradaadi|Kradaadi', 'lohit|Lohit',
+                        'longdong|Longdong', 'lowersubansiri|Lower Subansiri',
+
+                    ]
+                }
+                for (var option in optionArray) {
+                    var pair = optionArray[option].split("|");
+                    var newoption = document.createElement("option");
+
+                    newoption.value = pair[0];
+                    newoption.innerHTML = pair[1];
+                    s2.options.add(newoption);
+                }
+
+            }
+
+
+        </script>
+         <label for="submit"></label>
+         <input type="submit" name="submit" id="my_submit">
+         <br>
+        </form> 
+    </div>
+    
+</html>

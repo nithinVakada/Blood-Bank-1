@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body style="background-color: azure;">
+  <!-- <div class="nav">
+    <span class="logo">Blood </span><span>Donation</span>
+    <ul class="nav_bar">
+        <li><a id="123" href="/homepage">Home</a></li>
+        <li><a href="/homepage">Services</a></li>
+        <li><a href="/homepage">Help</a></li>
+        <li><a href="/homepage">About US</a></li>
+    </ul>
+    <a class="login" href="/login">login</a>
+</div> -->
+   <br>
+   <H1 style="text-align: center;">SHOWING <%=UserList.length%> results </H1>
+     <table class="table table-striped table-bordered table-hover shadow" style="width: 900px; margin: 100px 0px 20px 300px;">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Bloodgroup</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Mobile</th>
+          </tr>
+        </thead>
+        <tbody>
+            <%UserList.forEach(datas=>{%>
+          <tr>
+            <th scope="row"><%=datas.name%></th>
+            <td><%=datas.age%></td>
+            <td><%=datas.bloodgroup%></td>
+            <td><%=datas.gender%></td>
+            <td><%=datas.phonenumber%></td>
+          </tr>
+          <%})%>
+        </tbody>
+      </table>
+      <a href="/homepage">Home</a>
+</body>
+</html>

@@ -1,0 +1,283 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+.logo{
+  color:Black;
+  font-size:50px;
+}
+span{
+    font-size:50px;
+    color: #D21312;
+}
+a{
+    text-decoration:none;
+}
+.ontop{
+    margin-top:5px;
+}
+.onbottom{
+    margin-top: 8px;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+  
+
+}
+.nav ul{
+   margin-left: 300px;
+   display: flex;
+   justify-content: center;
+}
+.nav_bar li{
+    color: grey;
+  margin-right: 70px;
+   font-size: large;
+    list-style-type: none;
+}
+.nav_bar  a{
+    text-decoration: none;
+    color: grey;
+}
+.nav_bar a:hover{
+    color: red;
+}
+.login{
+    text-decoration: none;
+    color:black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     border: 2px solid black;
+    border-radius:20px;
+    font-size: x-large;
+    padding:1px 35px;
+   padding-top: 15px; 
+    margin-left:25px;
+    
+}
+
+ a.login:hover{
+    background-color: red;
+    color:white;
+}
+.images{
+    display:flex;
+    margin: auto;
+    margin-top:20px;  
+}
+.first_row {
+    display:flex;
+    border: 2px  black;
+    /* justify-content: space-between; */
+    margin-left: 5%;
+    margin-bottom: 0%;
+}
+.register{
+    margin-top: 40px;
+    margin-left: 0px;
+}
+
+.register{
+    /*display: flex;*/
+    width:45%;
+    
+   border:2px solid grey;
+   border-radius: 20px;
+    margin-left:2%;
+    margin-right: 2.5px;
+    /*padding: 60px 60px;  */ 
+   background-color: white;
+   /*margin-bottom:3px;*/
+}
+.registerimg,.search_donor_img{
+    margin-top:3%;
+    margin-left: 5%;
+    margin-right:5%;
+}
+.register_heading,.search_donor_head {
+    margin-top: 0.5px;
+    margin-left:20px;
+    font-size: xx-large;
+    /*color: orangered;*/
+    text-decoration-line: underline;
+    text-decoration-color:  darkred;
+    
+
+}
+.registerlines,.searching_donor {
+    background-color: white;
+    margin-left: 20px;
+}
+.register_content,.search_donor_content{
+    
+    margin-left: 20px;
+    margin-right: 3%;
+    font-size: x-large;
+    font-family: 'Chivo Mono';
+    text-align: justify;
+}
+.reg_button{
+    width:20px;
+    color:white;
+    margin-left: 40%;
+    border:2px solid black;
+    border-radius: 4px;
+    padding:4px 6px;
+    background-color: red;
+    font-size: x-large;
+    margin-bottom: 10%;
+    margin-top: 0%;
+}
+a.reg_button:hover{
+    background: rgb(253,29,29);
+    background: linear-gradient(79deg, rgba(253,29,29,1) 22%, rgba(230,223,214,1) 100%);
+   
+}
+.search,.blood_camps{
+    width:45%;
+    border: 2px solid grey;
+    border-radius: 20px;
+    margin-right: 10%;
+    margin-top: 40px;
+    height: 80%;
+    margin-bottom: 0px;
+    background-color: #F6F1F1;
+}
+.bankhead,.blood_camps_lines{
+    color: black;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-top:2px;
+    margin-right: 5px;
+    margin-bottom:0px;
+}
+.bank_heading,.blood_camps_heading{
+    font-size: xx-large;
+    margin-top: 0px;
+}
+.bank_content,.blood_camps_content{
+    font-size:20px;
+    font-size:x-large;
+    margin-right:20px;
+    font-family: 'Chivo Mono';
+    text-align: justify;
+}
+.searchbank,.search_donor_btn,.blood_camp_btn{
+    color:white;
+    margin-left: 40%;
+    border:2px solid black;
+    border-spacing:40px;
+    border-radius: 4px;
+    padding:4px 6px;
+    background-color: red;
+    font-size: x-large;
+    margin-bottom:10px;
+}
+.searchimg,.blood_camps_img{
+    margin-top:3%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom: 0%;
+}
+/* .second_row{
+    display:flex;
+    margin-left:5%;
+   
+    position: relative;
+    margin-top: 4px;
+} */
+.search_donor{
+    margin-top: 40px;
+    margin-left: 0px;
+    width:45%;
+   border:2px solid grey;
+   border-radius: 20px;
+   
+    margin-right: 2.5px;
+    /*padding: 60px 60px;  */ 
+   background-color: #F6F1F1;
+   /*margin-bottom:3px;*/
+}
+.searching_donor{
+    background-color: #F6F1F1;
+}
+.blood_camps{
+    background-color: white;
+    margin-top: 0px;
+}
+.ask
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+h1{
+    width:500px;
+    
+    margin-left: 450px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+.faqs{
+    width:45%;
+   /* border-top: 1px solid black;*/
+    margin-top: 95px;
+    padding-right: 7%;
+    /*background-color: #EAF6F6;*/
+    display: flex;
+    flex-direction: column;
+}
+.faqs2{
+    width:45%;
+    /* border-top: 1px solid black;*/
+     margin-top: 1px;
+     /*background-color: #EAF6F6;*/
+     padding-left: 7%;
+   
+     display: flex;
+     flex-direction: column; 
+}
+.faq{
+    width:90%;
+    margin-left: 5%;
+    height: 90%;
+    margin-right: 5%;
+}
+.question{
+    display:flex;
+    padding-top: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5px;
+    font-size: 21px;
+    cursor: pointer;
+    background-color: #F37878;
+    border:1px solid black;
+}
+.arrow{
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-right: 3%;
+}
+
+
+
+.answer{
+    border: 1px  red;
+    padding-top: 1px;
+    max-height: 0px;
+    overflow:hidden ;
+}
+.answer p{
+    padding-top: 0px;
+    padding-left: 5%;
+    font-size: 20px;
+}
+.faq.active .answer{
+    max-height:150px;
+    
+}

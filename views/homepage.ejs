@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Chivo Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="./public/css/homepage.css">
+    <script src="https://kit.fontawesome.com/44f2b8b8d4.js" crossorigin="anonymous"></script>
+    <style>
+       
+        #about-section {
+           background: rgba(32, 33, 36, 0.1);
+           background-color: #BA6375;
+           position: relative;
+           
+       }
+       .row{
+        display: flex;
+       }
+       .blockabout {
+           margin-top: 5%;
+           margin-right: 5%;
+           padding: 25px;
+           background: white;
+           margin-bottom: 5%;
+           background-color: #F6F1F1;
+       }
+       
+       .blockabout-inner {
+           padding: 10px;
+           border: 1px solid rgba(32, 33, 36, 0.1);
+           font-size: 24px;
+           background-color: #F6F1F1;
+          
+       }
+       
+       .sosmed-horizontal a i {
+           border: 1px solid #070707;
+           border-radius: 50%;
+           color: #070707;
+           display: inline-block;
+           height: 30px;
+           width: 30px;
+           line-height: 30px;
+           margin: auto 3px;
+           font-size: 15px;
+           text-align: center;
+           transition: all 0.3s;
+       }
+       
+       .rey-btn {
+           border: 2px solid #070707;
+           padding: 10px 40px;
+           text-transform: uppercase;
+           letter-spacing: 2px;
+           font-size: 13px;
+           font-weight: 700;
+           border-radius: 50px;
+           transition: all 0.3s;
+       }
+       .potoaboutwrap{
+           margin-top:5%;
+       }
+       .abouthead{
+         margin-left: 45%;
+       }
+            </style>
+
+
+
+</head>
+
+<body>
+
+    <hr class="ontop">
+    <div class="nav">
+        <span class="logo">Blood </span><span>Donation</span>
+        <ul class="nav_bar">
+            <li><a id="123" href="">Home</a></li>
+            <li><a href="#one_row">Services</a></li>
+            <li><a href="#faqss">Help</a></li>
+            <li><a href="#faqss">About US</a></li>
+        </ul>
+        
+        <a class="login" href="/login">login</a>
+      
+    </div>
+    <hr class="onbottom">
+    <!-- <img style="height:450px; width:95%"; src="https://media.gettyimages.com/id/1007645984/photo/young-woman-get-prepared-by-a-nurse-for-blood-donation.jpg?s=612x612&w=0&k=20&c=URfHBGHzGE8WHC8fuoQ_yhANPfXxod28DxbDIYOWGVE=" alt="">
+  --> <img class="images" style="height:450px; width:95%" ;
+        src="https://media.istockphoto.com/id/1338750217/photo/nurse-preparing-patient-to-do-a-blood-analysis.jpg?s=612x612&w=0&k=20&c=HhqYNGE4GhNVegUysfyWjce08QO_fS3t0lqeCnn54cM="
+        alt="jhsj">
+    <div class="first_row" id="one_row">
+        <div class="register">
+            <img class=registerimg height="250px" style="width:90%; "
+                src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/06/GettyImages-465489053_thumb-732x549.jpg"
+                alt="">
+            <div class="registerlines">
+                <p class="register_heading">
+                    Register as a donor
+                </p>
+
+
+                <p class="register_content">Registers users could give complete information about them including
+                    their blood group,age and would be placed in the list of donors.
+                    Thus the people come to about the blood donors</p>
+
+            </div>
+            <a href="/register" class="reg_button">Register now</a>
+            <br>
+            <p></p>
+        </div>
+        <div class="search_donor">
+            <img class="search_donor_img" height="250px" style="width:90%;"
+                src="https://cdn.pixabay.com/photo/2015/04/20/21/42/blood-732298_960_720.jpg" alt="">
+            <div class="searching_donor">
+                <p class="search_donor_head">Search for a Donor</p>
+                <p class="search_donor_content">Search for a blood donor in a particular region just by
+                    specifying the area name and the required blood group in a single click
+                </p><br>
+            </div>
+            <a href="/dosearch" class="search_donor_btn">Search donor</a>
+            <br>
+            <p></p>
+        </div>
+        <!-- <div class="search">
+            <img class="searchimg" height="250px" style="width:90%;"
+                src="https://www.hopkinsmedicine.org/-/media/images/health/2_-treatment/pathology/blood-banking-hero.ashx?h=500&iar=0&mh=500&mw=1300&w=1297&hash=8FE7D60CC3BFA31566598DAE13D91331"
+                alt="">
+
+            <div class="bankhead">
+                <p class="bank_heading">Search Blood Banks</p>
+
+                <p class="bank_content">
+                    Reduce the time of finding blood banks in a region.Search for
+                    the nearby blood banks in a region by just giving the area name and the blood groups that are
+                    available in those blood banks
+
+                </p>
+            </div>
+            <a href="" class="searchbank">Search now</a>
+            <br>
+            <p></p>
+        </div> -->
+    </div>
+    <!-- <div class="second_row" id="two_row">
+        <div class="search_donor">
+            <img class="search_donor_img" height="250px" style="width:90%;"
+                src="https://cdn.pixabay.com/photo/2015/04/20/21/42/blood-732298_960_720.jpg" alt="">
+            <div class="searching_donor">
+                <p class="search_donor_head">Search for a Donor</p>
+                <p class="search_donor_content">Search for a blood donor in a particular region just by
+                    specifying the area name and the required blood group in a single click
+                </p>
+            </div>
+            <a href="/dosearch" class="search_donor_btn">Search donor</a>
+            <br>
+            <p></p>
+        </div> -->
+        <!-- <div class="blood_camps">
+            <img class="blood_camps_img" height="250px" style="width:90%;"
+                src="https://cdn.pixabay.com/photo/2020/02/19/06/23/earth-4861456__340.jpg" alt="" class="blood_drive">
+            <div class="blood_camps_lines">
+                <p class="blood_camps_heading">Search for blood drives</p>
+                <p class="blood_camps_content">Search for blood drives that are being conducted
+                    in a specific region in a single click also know the complete
+                    details of the drive
+                </p>
+                <a href="" class="blood_camp_btn">Search drives</a>
+                <p></p>
+            </div>
+        </div>
+    </div>-->
+    <div class="ask">
+        <div class="faqs2">
+            <h1>Frequently asked Questions</h1>
+            <div class="faq">
+                <div class="question">
+                    <p> What is the mimimum age required for blood donation?</p>
+                    <svg class="arrow" width="35" height="35" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke-width="7" stroke-linecap="round" />s
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>The universally accepted criteria for donor selection are: Age between 18 and 60 years.
+                        Haemoglobin -
+                        not less than 12.5 g/Dl. Pulse - between 50 and 100/minute with no irregularities.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <p> How much blood is taken at donation time?</p>
+                    <svg class="arrow" width="35" height="35" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke-width="7" stroke-linecap="round/">
+
+
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>For a whole blood donation, approximately 0.5 L of blood is collected. For donations of other
+                        blood
+                        products, such as platelet or plasma, the amount collected depends on your height, weight and
+                        platelet count.
+
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="question">
+                    <p> Can I still donate if I have high blood pressure?</p>
+                    <svg class="arrow" width="35" height="35" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke-width="7" stroke-linecap="round/">
+
+
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>Yes, if your blood pressure falls within the limits set by FDA regulations.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+     <div class="faqs" id="faqss">
+        <div class="faq">
+            <div class="question">
+                <p>I'm taking medications.Can I still donate blood?</p>
+                <svg class="arrow" width="35" height="35" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke-width="7" stroke-linecap="round" />s
+                </svg>
+            </div>
+            <div class="answer">
+                <p>
+                    Getting a tattoo or piercing recently from a licensed establishment does not make you ineligible to donate blood.
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <p> 
+                    How often can I donate blood?
+                </p>
+                <svg class="arrow" width="35" height="35" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke-width="7" stroke-linecap="round" />s
+                </svg>
+            </div>
+            <div class="answer">
+                <p>
+                    
+                    The minimum donation frequency for whole blood donation in India is every 56 days.
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <p> Can I donate if I recently had a tattoo?</p>
+                <svg class="arrow" width="35" height="35" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke-width="7" stroke-linecap="round" />s
+                </svg>
+            </div>
+            <div class="answer">
+                <p>
+                    Getting a tattoo or piercing recently from a licensed establishment does not make you ineligible to donate blood.
+                </p>
+            </div>
+        </div>
+     </div>
+  </div>
+    
+    <script src="./public/css/homepage.js"></script>
+     <h1 class="abouthead" id="about_us">About Us</h1>
+    <section id="about-section" class="pt-5 pb-5">
+        <div class="container wrapabout">
+            <div class="red"></div>
+            <div class="row">
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <figure class="potoaboutwrap">
+                        <img src="https://blog.xoxoday.com/content/images/2023/06/world-blood-donation-day.webp" alt="potoabout" height="400" width="600" />
+                    </figure>
+                </div>
+                <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
+                    <div class="blockabout">
+                        <div class="blockabout-inner text-center text-sm-start">
+                            <div class="title-big pb-3 mb-3">
+                                <h3>ABOUT US</h3>
+                            </div>
+                            <p class="description-p text-muted pe-0 pe-lg-0">
+                              This website establishes a connection between blood donors and receivers.The people who require Blood
+                              could find a donor in a region by just providing the type of blood group required
+                              and the region.
+                            </p>
+                            <p class="description-p text-muted pe-0 pe-lg-0"></p>
+                            <div class="sosmed-horizontal pt-3 pb-3">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                            <br>
+                            <a href="#" class="btn rey-btn mt-3">See More</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+      
+    </section>
+</body>
+
+</html>

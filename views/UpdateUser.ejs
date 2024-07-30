@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/aboutme.css">
+</head>
+<body>
+    
+
+
+    <form action="/update/<%=user?._id%>?_method=put" method="POST">
+        <!-- full name -->
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          value="<%=user?.name%> "
+          name="name"
+          id="name"
+        />
+        <!-- email -->
+        <label for="email">Email</label>
+        <input type="email" value="<%=user?.email%>" name="email" id="email" />
+        <button type="submit">Update User</button>
+      </form>
+</body>
+</html>
